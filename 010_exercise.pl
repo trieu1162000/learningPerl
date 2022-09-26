@@ -12,9 +12,9 @@
             );
 sub printHashFunc{
 	my %hash = @_;
-	for $eachElementOfHash (keys %hash){
+	for $eachElementOfHash (sort keys %hash){
 		print "$eachElementOfHash: ";
-		for $eachElementOfElementOfHash (keys %{$hash{$eachElementOfHash}}){
+		for $eachElementOfElementOfHash (sort keys %{$hash{$eachElementOfHash}}){
 			print "$eachElementOfElementOfHash = $hash{$eachElementOfHash}{$eachElementOfElementOfHash} ";
 		}
 		print "\n";
