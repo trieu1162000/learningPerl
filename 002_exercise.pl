@@ -12,10 +12,10 @@ print "$arrayKeys[2]\n";
 
 print "b/ Print key/value of hash\n";
 
-@arrayValues = values %data;
-print "$arrayValues[0]\n";
-print "$arrayValues[1]\n";
-print "$arrayValues[2]\n";
+foreach $key (keys %data)
+{
+  print "$key/$data{$key}\n";
+}
 
 print "c/ Check if a key is exist.\n";
 

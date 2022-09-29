@@ -46,6 +46,9 @@ for($i = 0; $i < $lengthOfArrayIndex ; $i = $i+1){
 	@newSubArr = ();
 }
 
+print "Q/ Add ipdr packages that has recordID = '2b08069da62b6406e3e58013a428379a60c322e9' into a new array.\n";
+print "Result:\n";
+
 foreach (@newArr)
 {
         print ("$_\n");
